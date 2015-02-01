@@ -1,4 +1,101 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.clearfix:after { /* clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
 body {
-	background: #D1DDDC;
-	color: #6E1010;
+	background: url("../images/restaurant_window.jpg") no-repeat fixed;
+	background-size: cover;
+	color: #CDCDCD;
+	font-family: Karla, sans-serif;
+	font-weight: 100;
+}
+h1 {
+	font-family: Quicksand, sans-serif;
+	font-size: 5em;
+	margin: 0;
+	color: rgb(178, 56, 85);
+}
+h2{
+	font-family: Quicksand, sans-serif;
+	font-size: 1.75em;
+	margin: 0;
+	color: rgb(178, 56, 85);
+}
+p {
+	line-height: 150%
+}
+a {
+	text-decoration: none;
+	transition: all 0.5s ease;
+	color: rgb(99, 31, 47);
+}
+a:hover {
+	color: #ffffff;
+}
+
+/* HEADER */
+header {
+	text-align: center;
+	border-bottom: 1px solid #1a1011;
+	padding: 12em 0 10em 0;
+}
+header .logo {
+	top: 1em;
+	left: 1em;
+	position: fixed;
+	display: inline-block;
+}
+#slogan {
+	font-style: italic;
+}
+
+/* NAVIGATION */
+nav {
+	top: 3em;
+	right: 0em;
+	position: absolute;
+	display: inline-block;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	padding: 1em 3em;
+	border-radius: 1em;
+	text-transform: uppercase;
+	background: rgb(26, 16, 17);
+	color: #E5C6D7;
+}
+nav a:hover{
+	background: rgba(26, 16, 17, .5);
+}
+
+.description {
+	background: rgba(0, 0, 0, .8);
+	border-bottom: 1px solid #1a1011;
+
+}
+.content {
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10em 0;
+}
+
+/* FOOTER */
+footer {
+	padding: .25em 1em;
+	background: #E5C6D7;
 }
