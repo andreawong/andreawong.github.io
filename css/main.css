@@ -1,35 +1,29 @@
-html {
+* { margin:0;padding:0;box-sizing:border-box; }
+/*html {
 	box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
-}
-.clearfix:after { /* clearfix */
-	content: "";
-	display: table;
-	clear: both;
-}
+}*/
 body {
 	background: url("../images/restaurant_window.jpg") no-repeat fixed;
 	background-size: cover;
 	color: #CDCDCD;
-	font-family: Karla, sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-weight: 100;
 }
 h1 {
-	font-family: Quicksand, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 5em;
-	margin: 0;
 	color: rgb(178, 56, 85);
 }
 h2{
-	font-family: Quicksand, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 1.75em;
-	margin: 0;
 	color: rgb(178, 56, 85);
 }
 p {
-	line-height: 150%
+	line-height: 120%
 }
 a {
 	text-decoration: none;
@@ -42,15 +36,12 @@ a:hover {
 
 /* HEADER */
 header {
-	text-align: center;
 	border-bottom: 1px solid #1a1011;
 	padding: 12em 0 10em 0;
 }
 header .logo {
-	top: 1em;
-	left: 1em;
-	position: fixed;
-	display: inline-block;
+	display: block;
+	float:left;
 }
 #slogan {
 	font-style: italic;
@@ -58,23 +49,19 @@ header .logo {
 
 /* NAVIGATION */
 nav {
-	top: 3em;
-	right: 0em;
-	position: absolute;
-	display: inline-block;
+	float:right;
 }
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 nav li {
 	display: inline-block;
 }
 nav a {
-	padding: 1em 3em;
+	padding: .5em 1.5em;
 	border-radius: 1em;
 	text-transform: uppercase;
+	text-align:center;
 	background: rgb(26, 16, 17);
 	color: #E5C6D7;
 }
@@ -89,7 +76,6 @@ nav a:hover{
 }
 .content {
 	max-width: 800px;
-	width: 80%;
 	margin: 0 auto;
 	padding: 10em 0;
 }
@@ -98,4 +84,12 @@ nav a:hover{
 footer {
 	padding: .25em 1em;
 	background: #E5C6D7;
+}
+
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
 }
