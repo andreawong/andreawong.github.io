@@ -1,83 +1,94 @@
 * { margin:0;padding:0;box-sizing:border-box; }
-/*html {
-	box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}*/
+
 body {
-	background: url("../images/restaurant_window.jpg") no-repeat fixed;
+	background: url("../images/suspended_books.jpg") no-repeat fixed;
 	background-size: cover;
 	color: #CDCDCD;
-	font-family: 'Karla', sans-serif;
-	font-weight: 100;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 h1 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 5em;
-	color: rgb(178, 56, 85);
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5em;
+	font-weight: 900;
+	color: rgb(28,22, 87);
 }
 h2{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.75em;
-	color: rgb(178, 56, 85);
+	color: rgb(28, 22, 87);
 }
 p {
 	line-height: 120%
 }
 a {
 	text-decoration: none;
-	transition: all 0.5s ease;
-	color: rgb(99, 31, 47);
+	color: rgb(0, 0, 0);
 }
 a:hover {
-	color: #ffffff;
+	color: rgb(181,2,67);
 }
 
 /* HEADER */
 header {
-	border-bottom: 1px solid #1a1011;
-	padding: 12em 0 10em 0;
+	text-align: center;
+	padding: 0 0 83px 0;
+	background: rgb(246,244,233);
 }
-header .logo {
-	display: block;
-	float:left;
+header h1 {
+	font-size: 5.5em;
+	font-weight: 500;
+}
+header p {
+	font-size: 4.25em;
+}
+.businesscard {
+	width: 800px;
+	margin: 0 auto;
+	padding: 100px 0;
 }
 #slogan {
 	font-style: italic;
+	color: rgb(181,2,67);
 }
-
-/* NAVIGATION */
+/* Figured out this nav with the help of this awesome, beginner-friendly, thorough explanation: http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support */
 nav {
-	float:right;
+	float: left;
+	width: 100%;
+	margin: 30px 0;
+	overflow: hidden;
+	position: relative;
 }
 nav ul {
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
 	list-style-type: none;
 }
 nav li {
-	display: inline-block;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 50%;
 }
 nav a {
-	padding: .5em 1.5em;
-	border-radius: 1em;
+	display: block;
+	margin: 5px;
+	padding: 0 20px;
 	text-transform: uppercase;
-	text-align:center;
-	background: rgb(26, 16, 17);
-	color: #E5C6D7;
-}
-nav a:hover{
-	background: rgba(26, 16, 17, .5);
 }
 
-.description {
+.about {
 	background: rgba(0, 0, 0, .8);
-	border-bottom: 1px solid #1a1011;
-
 }
 .content {
-	max-width: 800px;
+	width: 800px;
 	margin: 0 auto;
-	padding: 10em 0;
+	padding: 4em 0;
 }
 
 /* FOOTER */
