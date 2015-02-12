@@ -6,16 +6,17 @@ body {
 	color: #CDCDCD;
 	font-family: 'Source Sans Pro', sans-serif;
 }
-h1 {
+h1,h2 {
 	font-family: 'Roboto', sans-serif;
+	color: rgb(28, 22, 87);
+}
+h1 {
+	
 	font-size: 2.5em;
 	font-weight: 900;
-	color: rgb(28,22, 87);
 }
 h2{
-	font-family: 'Roboto', sans-serif;
 	font-size: 1.75em;
-	color: rgb(28, 22, 87);
 }
 p {
 	line-height: 120%
@@ -82,7 +83,7 @@ nav a {
 	text-transform: uppercase;
 }
 
-.about {
+#about {
 	background: rgba(0, 0, 0, .8);
 }
 .content {
