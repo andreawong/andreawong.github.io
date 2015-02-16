@@ -1,101 +1,161 @@
 * { margin:0;padding:0;box-sizing:border-box; }
 
 body {
-	background: url("../images/suspended_books.jpg") no-repeat fixed;
-	background-size: cover;
-	color: #CDCDCD;
-	font-family: 'Source Sans Pro', sans-serif;
+	background: rgb(245,247,248);
+	color: rgb(49,49,49);
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 300;
+	/*Another fun colour: 255,244,73*/
+	/*Another fun colour: 16,201,146*/
+	/*Another fun colour: 227,10,234*/
+}
+blockquote {
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.5em;
+	line-height: 150%;
 }
 h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 2.5em;
-	font-weight: 900;
-	color: rgb(28,22, 87);
+	font-size: 3em;
 }
-h2{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.75em;
-	color: rgb(28, 22, 87);
+h2 {
+	font-size: 1.5em;
 }
-p {
-	line-height: 120%
-}
-a {
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-a:hover {
-	color: rgb(181,2,67);
-}
-
-/* HEADER */
-header {
-	text-align: center;
-	padding: 0 0 83px 0;
-	background: rgb(246,244,233);
-}
-header h1 {
-	font-size: 5.5em;
-	font-weight: 500;
-}
-header p {
-	font-size: 4.25em;
-}
-.businesscard {
-	width: 800px;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-#slogan {
-	font-style: italic;
-	color: rgb(181,2,67);
-}
-/* Figured out this nav with the help of this awesome, beginner-friendly, thorough explanation: http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support */
-nav {
-	float: left;
-	width: 100%;
-	margin: 30px 0;
-	overflow: hidden;
-	position: relative;
-}
-nav ul {
-	clear: left;
-	float: left;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	left: 50%;
-	list-style-type: none;
-}
-nav li {
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	right: 50%;
-}
-nav a {
-	display: block;
-	margin: 5px;
-	padding: 0 20px;
+h3 {
+	font-size: .8em;
+	font-weight: 700;
 	text-transform: uppercase;
 }
-
-.about {
-	background: rgba(0, 0, 0, .8);
+p {
+	line-height: 120%;
 }
-.content {
-	width: 800px;
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(227,10,234);
+}
+.italics {
+	font-style: italic;
+}
+hr {
+	clear: both;
+}
+
+/*HEADER*/
+header {
+	margin: 2em 0;
+}
+header img {
+	float: left;
+}
+
+/*NAVIGATION*/
+nav{
+	text-transform: uppercase;
+}
+nav ul {
+	list-style: none;
+}
+nav li {
+	float: left;
+	margin: 0 1.5em;
+}
+nav a {
+	font-weight: 700;
+}
+nav a:hover{
+	text-decoration: underline;
+}
+header nav ul {
+	float: right;
+	margin: 1.5em 0 0 0; /*How can I do this more elegantly?*/
+}
+footer nav ul {
+	width: 33.33%;
+}
+
+/*SECTIONS*/
+section {
+	margin: 0 0 3em 0;
+}
+.feature-large img {
+	height: auto;
+	width: 100%;
+}
+.feature-medium img {
+	float: left;
+	height: auto;
+	margin-right: 1em;
+	width: 66.66%;
+}
+.feature-medium blockquote {
+	margin-top: 1em;
+}
+.feature-small figure{
+	float: left;
+	padding-left: 1em; /*What is the best way to exclude the first figure from this?*/
+	width: 33.33%;
+}
+.feature-small img {
+	height: auto;
+	width: 100%;
+}
+
+/*FOOTER*/
+footer img {
+	display: block;
 	margin: 0 auto;
-	padding: 4em 0;
+}
+.social-share {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 33.33%;
+}
+#authorship {
+	margin: 0;
+	float: right;
+	width: 33.33%;
+}
+#newsletter {
+	clear: both;
+}
+#newsletter p {
+	float: left;
+	margin: 2em 0 0 0;
+	width: 50%;
+}
+#newsletter a {
+	border: 2px solid rgb(227,10,234);
+	display: block;
+	float: right;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	text-align: center;
+	width: 8em;
+}
+#newsletter a:hover {
+	background: rgba(227,10,234,.2);
 }
 
-/* FOOTER */
-footer {
-	padding: .25em 1em;
-	background: #E5C6D7;
+
+
+
+
+
+/*IDs*/
+#wrapper {
+	margin: 0 auto;
+	width: 90%;
 }
+
+
+
+
+
+
 
 .clearfix:after { 
 	content: "."; 
