@@ -72,10 +72,6 @@ header nav ul {
 	float: right;
 	margin: 1.5em 0 0 0; /*How can I do this more elegantly?*/
 }
-footer nav ul {
-	width: 33.33%;
-}
-
 /*SECTIONS*/
 section {
 	margin: 0 0 3em 0;
@@ -108,15 +104,20 @@ footer img {
 	display: block;
 	margin: 0 auto;
 }
+footer nav {
+	float:left;
+	width:33.33%;
+}
 .social-share {
 	display: block;
-	margin: 0 auto;
+	float:left;
+	margin: 0;
 	text-align: center;
 	width: 33.33%;
 }
 #authorship {
 	margin: 0;
-	float: right;
+	float: left;
 	width: 33.33%;
 }
 #newsletter {
