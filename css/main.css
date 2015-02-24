@@ -1,51 +1,66 @@
 * { margin:0;padding:0;box-sizing:border-box; }
 
 body {
-	background: rgb(245,247,248);
-	color: rgb(49,49,49);
+	background: rgb(241,241,242);
+	color: rgb(22,22,22);
 	font-family: 'Lato', Arial, sans-serif;
 	font-weight: 300;
+	font-size: 16px;
 	/*Another fun colour: 255,244,73*/
 	/*Another fun colour: 16,201,146*/
 	/*Another fun colour: 227,10,234*/
 }
-blockquote {
-	font-weight: 100;
-	font-style: italic;
-	font-size: 1.5em;
-	line-height: 150%;
+main {
+	background: rgba(255,255,255,.8);
+	margin: 0 auto;
+	padding: 0 5px;
+	max-width: 810px;
+	/*Why can't I get rid of that pesky little piece of body background underneath main?*/
+}
+h1, h2, h3, h4 {
+	color: rgb(49,49,49);
+	font-weight: 700;
 }
 h1 {
-	font-size: 3em;
+	font-size: 7em;
+	margin-bottom: .25em;
 }
 h2 {
-	font-size: 1.5em;
+	font-size: .8em;
+	text-transform: uppercase;
 }
 h3 {
-	font-size: .8em;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-size: 1.5em;
 }
 p {
 	line-height: 120%;
+}
+p+p {
+	margin-top:1em;
+}
+.feature p+p {
+	font-style: italic;
 }
 a {
 	color: inherit;
 	text-decoration: none;
 }
-a:hover {
+nav a:hover {
 	color: rgb(227,10,234);
 }
-.italics {
-	font-style: italic;
+a.selected {
+	color: rgb(227,10,234);
 }
-hr {
-	clear: both;
+em {
+	font-style: italic;
+	font-weight: 300;
 }
 
 /*HEADER*/
 header {
-	margin: 2em 0;
+	margin: 0 0 1.5em 0;
+	padding: 2em 0 1em 0;
+	border-bottom: 1px dotted;
 }
 header img {
 	float: left;
@@ -55,54 +70,95 @@ header img {
 nav{
 	text-transform: uppercase;
 }
+header nav {
+	font-size: 1.25em;
+}
 nav ul {
 	list-style: none;
 }
-nav li {
+header nav ul {
+	float: right;
+	margin: 1em 0 0 0;
+}
+header nav li {
 	float: left;
-	margin: 0 1.5em;
+	margin: 0 0 0 1.5em;
+}
+footer nav ul {
+	float: left;
+	margin: 0 0 2em 0;
+}
+footer nav li {
+	float: left;
+}
+footer nav li:before {
+	color: rgb(227,10,234);
+	content: "/";
+	font-weight: 700;
+	margin: 0 .15em 0 0;
+}
+footer nav li+li {
+	margin: 0 0 0 .5em;
 }
 nav a {
 	font-weight: 700;
 }
-nav a:hover{
-	text-decoration: underline;
-}
-header nav ul {
-	float: right;
-	margin: 1.5em 0 0 0; /*How can I do this more elegantly?*/
-}
+
 /*SECTIONS*/
-section {
+.feature {
 	margin: 0 0 3em 0;
+
 }
-.feature-large img {
+.large img {
 	height: auto;
 	width: 100%;
 }
-.feature-medium img {
+.medium img {
 	float: left;
 	height: auto;
 	margin-right: 1em;
 	width: 66.66%;
 }
-.feature-medium blockquote {
-	margin-top: 1em;
-}
-.feature-small figure{
+.small section {
 	float: left;
-	padding-left: 1em; /*What is the best way to exclude the first figure from this?*/
-	width: 33.33%;
+	width: 32%;
 }
-.feature-small img {
+.small section+section{
+	margin-left: 1em;
+}
+.small section img {
 	height: auto;
 	width: 100%;
 }
 
+/*ARTICLES*/
+article h3 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 300;
+	margin: .3em 0;
+}
+article section {
+	margin: 0 auto;
+	width: 70%;
+}
+article p:nth-of-type(2) {
+	font-size: 1.5em;
+}
+.byline {
+	font-size: .8em;
+	margin: 0 0 3em 0;
+	text-align: center;
+}
+
 /*FOOTER*/
+footer {
+	margin: 2em 0 0 0;
+	padding: 2em 0 1em 0;
+}
 footer img {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 2em auto;
 }
 footer nav {
 	float:left;
@@ -112,46 +168,39 @@ footer nav {
 	display: block;
 	float:left;
 	margin: 0;
-	text-align: center;
-	width: 33.33%;
+	text-align: right;
+	width: 66.66%;
 }
-#authorship {
-	margin: 0;
+#contact {
 	float: left;
+	margin: 0;
+	text-align: right;
 	width: 33.33%;
 }
 #newsletter {
+	border-top: 1px dotted;
 	clear: both;
+	padding: 1.25em 0 0 0;
 }
 #newsletter p {
 	float: left;
-	margin: 2em 0 0 0;
-	width: 50%;
+	margin: 0; 
+	padding: 1.125em 0;
 }
 #newsletter a {
 	border: 2px solid rgb(227,10,234);
+	color: rgb(227,10,234);
 	display: block;
 	float: right;
-	margin: 1em 0 0 0;
+	margin: 0;
 	padding: 1em;
 	text-align: center;
 	width: 8em;
 }
 #newsletter a:hover {
-	background: rgba(227,10,234,.2);
+	background: rgba(227,10,234,.8);
+	color: rgb(255,255,255);
 }
-
-
-
-
-
-
-/*IDs*/
-#wrapper {
-	margin: 0 auto;
-	width: 90%;
-}
-
 
 
 
