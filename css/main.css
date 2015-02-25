@@ -6,16 +6,12 @@ body {
 	font-family: 'Lato', Arial, sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	/*Another fun colour: 255,244,73*/
-	/*Another fun colour: 16,201,146*/
-	/*Another fun colour: 227,10,234*/
 }
 main {
 	background: rgba(255,255,255,.8);
 	margin: 0 auto;
-	padding: 0 5px;
-	max-width: 810px;
-	/*Why can't I get rid of that pesky little piece of body background underneath main?*/
+	padding: 0 2em;
+	max-width: 1200px;
 }
 h1, h2, h3, h4 {
 	color: rgb(49,49,49);
@@ -70,15 +66,12 @@ header img {
 nav{
 	text-transform: uppercase;
 }
-header nav {
-	font-size: 1.25em;
-}
 nav ul {
 	list-style: none;
 }
 header nav ul {
 	float: right;
-	margin: 1em 0 0 0;
+	margin: 1.6em 0 0 0;
 }
 header nav li {
 	float: left;
