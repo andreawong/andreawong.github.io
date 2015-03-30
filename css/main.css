@@ -288,11 +288,17 @@ footer nav {
 /*HAMBURGER MENU*/
 .mobile-nav {
 	display: none;
+	font-weight: 700;
 	float: right;
 	margin: .25em 0 0 2em;
 	text-align: right;
+	text-transform: uppercase;
+}
+.mobile-nav a:hover {
+	color: rgb(227,10,234);
 }
 .menu-btn {
+	float: right;
 }
 .menu-btn div {
 	position: absolute;
@@ -316,6 +322,8 @@ footer nav {
 }
 .responsive-menu{
 	display: none;
+	float: right;
+	margin: 0 1em .5em 0;
 }
 .expand {
 	display: block !important; 
