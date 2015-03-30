@@ -167,14 +167,10 @@ input[type=text] {
 	padding: 1em;
 	width: 33.33%;
 }
-<<<<<<< HEAD
 .small > section:nth-child(3n+1) {
 	clear: both;
 }
 .small img {
-=======
-.small section img {
->>>>>>> origin/master
 	height: auto;
 	width: 100%;
 }
