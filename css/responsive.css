@@ -1,0 +1,143 @@
+@media only screen and (max-width: 1177px) {
+	h1 {
+		float: none;
+		font-size: 4em;
+		margin: 0 0 0 .2em;
+		width: 100%;
+	}
+	.category-description {
+		margin: 1em 1em 2.5em;
+		text-align: left;
+	}
+	.medium {
+		padding: 2em 2em 1.7em 2em;
+	}
+	article section {
+		width: 60%;
+	}
+	.icon {
+		-webkit-font-smoothing: none;
+		-moz-osx-font-smoothing: none;
+}
+@media only screen and (max-width: 940px) {
+	.medium {
+		padding: 1em 1em .7em 1em;
+	}
+	article section {
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 904px) {
+	.feature p+p {
+		font-size: 1em;
+	}
+	.medium img {
+		margin-right: 1em;
+	}
+}
+@media only screen and (max-width: 826px) {
+	form {
+		display: none;
+	}
+	header {
+		margin: 0 0 1.5em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.mobile-nav {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	main {
+		padding: 0;
+	}
+	.large, .medium {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.medium, .small {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.large div {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	.small section {
+		clear: both;
+		float: none;
+		margin: 0 0 .93em;
+		padding: 0;
+		width: 100%;
+	}
+	.small section:last-child {
+		margin: 0;
+	}
+	.small img {
+		height: auto;
+		float: left;
+		margin-right: 1em;
+		width: 25%;
+	}
+	article {
+		margin: 0;
+	}
+	article section {
+		width: 80%;
+	}
+	footer {
+		margin: 2em 0 0;
+		padding: 0 0 2.5em;
+	}
+	.social {
+		display: block;
+		float: none;
+		margin-bottom: 2em;
+		text-align: center;
+		width: 100%;
+	}
+	.icon {
+		margin: 0;
+	}
+	.social a:nth-of-type(2) {
+		margin: 0 1em;
+	}
+	#newsletter {
+		border-top: 1px dotted;
+		clear: both;
+		padding: 1.25em 1em 0;
+	}
+@media only screen and (max-width: 676px) {
+	article section {
+		width: 90%;
+	}
+	#newsletter {
+		padding: 1em 1em 0;
+	}
+	#newsletter p {
+		float: none;
+		margin: 0 auto; 
+		padding: 1.125em 0;
+		text-align: center;
+	}
+	#newsletter a {
+		border: 2px solid rgb(227,10,234);
+		color: rgb(227,10,234);
+		display: block;
+		float: none;
+		margin: 0 auto;
+		padding: 1em;
+		text-align: center;
+		width: 8em;
+	}
+}
+@media only screen and (max-width: 460px) {
+	article section {
+		width: 95%;
+	}
+@media only screen and (max-width: 460px) {
+	body {
+		font-size: 16px;
+	}
